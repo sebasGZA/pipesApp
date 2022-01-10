@@ -17,7 +17,7 @@ export class NoComunesComponent {
   }
 
   cambiarPersona(): void {
-    this.nombre = this.nombre == 'Susana' ? 'Sebatian' : 'Susana' 
+    this.nombre = this.nombre == 'Susana' ? 'Sebatian' : 'Susana'
     this.genero = this.genero == 'masculino' ? 'femenino' : 'masculino'
   }
 
@@ -42,4 +42,21 @@ export class NoComunesComponent {
     edad: 26,
     direccion: 'Bello,Colombia'
   }
+
+  //Json Pipe
+
+  heroes = [
+    {
+      nombre: 'SuperMan',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Acuaman',
+      vuela: false
+    }
+  ]
 }
