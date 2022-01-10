@@ -34,4 +34,12 @@ export class NoComunesComponent {
   borrarCliente(): void {
     this.clientes.pop()
   }
+
+  //KeyValuePipe
+
+  persona = {
+    nombre: 'Sebastian',
+    edad: 26,
+    direccion: 'Bello,Colombia'
+  }
 }
