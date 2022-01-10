@@ -16,6 +16,11 @@ export class NoComunesComponent {
     'femenino': 'invitarla'
   }
 
+  cambiarPersona(): void {
+    this.nombre = this.nombre == 'Susana' ? 'Sebatian' : 'Susana' 
+    this.genero = this.genero == 'masculino' ? 'femenino' : 'masculino'
+  }
+
   //i18nPlural
 
   clientes: string[] = ['Maria', 'Pedro', 'Juan']
@@ -23,5 +28,10 @@ export class NoComunesComponent {
     '=0': 'no tenemos ningun cliente esperando.',
     '=1': 'tenemos un cliente esperando.',
     'other': 'tenemos # clientes esperando.'
+  }
+
+
+  borrarCliente(): void {
+    this.clientes.pop()
   }
 }
