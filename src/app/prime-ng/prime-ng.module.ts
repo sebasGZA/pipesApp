@@ -10,6 +10,7 @@ import { MenubarModule } from 'primeng/menubar';
     ButtonModule,
     CardModule,
     MenubarModule,
+    
   ]
 })
 export class PrimeNgModule { }
